@@ -9,21 +9,54 @@
 body{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
+    background-color: rgba(0, 0, 0, 0.621);
+    
     position: relative;
 }
 .frente{
     position: relative;
     width: 100%;
     height: 100vh;
+    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
 
-    background-color: aqua;
+    
+}
+.convite {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    position: absolute;
+   width:350px;
+   height: 250px;
+    background-image: url('../img/envelope.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: surgir 4s ease-in-out;
+    
+}
+.convite button{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+}
+.frente img{
+    position: absolute;
 }
 
 .corpo{
+    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
     height: 90vh;
     position: relative;
-    display: block;
+    display: none;
     overflow: hidden;
 
 

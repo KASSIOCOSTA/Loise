@@ -8,7 +8,27 @@
    
 </head>
 <body>
+    <audio src="audio/BomDia.mp3" loop id="audio"></audio>
     <div class="frente">
+        <img src="img/grama.png" class="grama">
+        <img src="img/arvore1.png"  class="arvore">
+          <img src="img/casa.png" class="casa">
+          <img src="img/arvore1.png"  class="arvore1">
+          <img src="img/arvore2.png" class="arvore2">        
+          <img src="img/cerca.png"  class="cercaleft">
+          <img src="img/cerca.png"  class="cercaright">
+          <img src="img/nuvem.png"  class="nuvem1">
+          <img src="img/nuvem.png"  class="nuvem2">
+          <img src="img/nuvem.png"  class="nuvem3">
+          <img src="img/burro.png"  class="loise">
+          <img src="img/ovelha.png"  class="ovelha">
+          <img src="img/porco.png"  class="porco">
+          <img src="img/vaca1.png" class="vaca">
+
+          <div class="convite">
+           <button onclick="abrir()">Abrir</button>
+          </div>
+         
         
     </div>
     
@@ -46,6 +66,22 @@
     
         
     </div>
+
+
+    <script>
+        const inicio = document.querySelector('.frente')
+        const corpo = document.querySelector ('.corpo')
+        const audio = document.querySelector('#audio')
+
+
+        function abrir(){
+            corpo.style.display = 'block'
+            inicio.style.display = 'none'
+            audio.play()
+            
+        }
+        
+    </script>
 
     
 </body>
