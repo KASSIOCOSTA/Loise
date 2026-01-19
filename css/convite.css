@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +11,13 @@ body{
     width: 100%;
     background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
     position: relative;
+}
+.frente{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-color: aqua;
 }
 
 .corpo{
@@ -26,6 +36,140 @@ body{
         opacity: 1;
     }
 }
+@keyframes subirGirar {
+  from {
+    opacity: 0;
+   transform: rotate(360deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deeg);
+
+  }
+}
+@keyframes subirGirar2 {
+  from {
+    opacity: 0;
+   transform: rotate(360deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deeg);
+
+  }
+}
+.informacoes{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  
+    width: 320px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nome{
+    color: white;
+    font-family: "Tangerine", cursive;
+    position: absolute;
+    font-size: 2.2em;
+    transform: translate(-50%);
+    left: 50%;
+    top: 50px;
+    z-index: 9;
+    animation: subirGirar 1.5s ease-out forwards;
+    text-shadow: 1px 1px 1px black;
+}
+.idade{
+    position: absolute;
+    background-image: url('../img/fita.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: subirGirar 1.5s ease-out forwards;
+
+    z-index: 9;
+}
+.texto{
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    top: 160px;
+    animation: subirGirar2 1.5s ease-out forwards;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+
+}
+.dia{
+    position: absolute;
+    font-size: 1.1em;
+    text-align: center;
+    border-bottom: dashed 1px black;
+    left: 50%;
+    transform: translate(-50%);
+    top: 230px;
+    animation: subirGirar 1.5s ease-out forwards;
+    color: rgb(255, 244, 26);
+    text-shadow: 1px 1px  black,
+    1px -1px black,
+    -1px 1px black,
+    -1px 1px black;
+}
+.flor-top{
+    width: 120px;
+    top: -20px;
+    transform: rotate(20deg);
+}
+.flor-left{
+    width: 150px;
+    bottom: -20px;
+    left: -20px;
+}
+.flor-right{
+    width: 150px;
+    top: -7px;
+    right: -20px;
+    transform: rotate(20deg);
+    
+}
+.presenca{
+    width: 70px;
+    bottom: -70px;
+    left: 70px;
+     animation: pulsar 2s linear infinite;
+     z-index: 99;
+}
+.localizacao{
+    width: 70px;
+    bottom: -70px;
+    right: 70px;
+    animation: pulsar 2s linear infinite;
+    z-index: 99;
+}
+@keyframes pulsar {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
 .corpo img{
     position: absolute;
 }
@@ -160,7 +304,7 @@ body{
     left: 50%;
     bottom: 0;
     transform: translate(-50%);
-    animation: aparecer 5s linear forwards;
+    animation: aparecer 5.2s linear forwards;
 }
 .ovelha{
     width: 100px;
@@ -169,7 +313,18 @@ body{
     animation: aparecer 4s linear forwards;
 ;
 }
-
+.porco{
+    bottom: 0;
+    width: 100px;
+    left: 45px;
+    animation: aparecer 6.5s linear forwards;
+}
+.vaca{
+    bottom: 50px;
+    left: -30px;
+    width: 110px;
+    animation: aparecer 7.5s linear forwards;
+}
 @keyframes aparecer {
     0% {
         opacity: 0;
