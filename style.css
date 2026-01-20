@@ -5,6 +5,20 @@
   box-sizing: inherit;
 }
 
+@keyframes nuvem-passando {
+    0% {
+        left: -500px;
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: 110%;
+        opacity: 1;
+    }
+}
+
 html {
   height: 100%;
   font-size: 65.2%;
@@ -12,11 +26,13 @@ html {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
+  overflow: hidden;
 }
 
 body {
+  overflow: hidden;
   height: 100%;
-  background-image: url(louise/img/capa4.jpg);
+  background-image: url(louise/img/capa2.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,10 +174,11 @@ button:focus {
   width: 95%;
   max-width: 800px;
   height: 700px;
-  position: relative;
+  position: absolute;
   border-radius: 20px;
   box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.1), 0 10px 10px -10px rgba(0, 0, 0, 0.02);
   transform-style: preserve-3d;
+  top: 320px;
 }
 #container > div {
   position: absolute;
@@ -232,12 +249,12 @@ button:focus {
 }
 
 .front {
-  background: linear-gradient(-45deg, #043703 0%, #d9fd0c 100%) no-repeat 0 0/200%;
+  background: linear-gradient(-45deg, #ee4ffc 0%, #ff006f 100%) no-repeat 0 0/200%;
   z-index: 3;
 }
 
 .back {
-  background: linear-gradient(135deg, #4ffcce 0%, #FFCF00 100%) no-repeat 0 0/200%;
+  background: linear-gradient(135deg, #ee4ffc 0%, #ff006f 100%) no-repeat 0 0/200%;
   z-index: 2;
 }
 .back .content {
