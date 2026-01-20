@@ -1,136 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loise</title>
-    <link rel="stylesheet" href="css/convite.css">
-   
-</head>
-<body>
-    <audio src="audio/BomDia.mp3" loop id="audio"></audio>
-    <div class="frente">
-        <img src="img/grama.png" class="grama">
-        <img src="img/arvore1.png"  class="arvore">
-          <img src="img/casa.png" class="casa">
-          <img src="img/arvore1.png"  class="arvore1">
-          <img src="img/arvore2.png" class="arvore2">        
-          <img src="img/cerca.png"  class="cercaleft">
-          <img src="img/cerca.png"  class="cercaright">
-          <img src="img/nuvem.png"  class="nuvem1">
-          <img src="img/nuvem.png"  class="nuvem2">
-          <img src="img/nuvem.png"  class="nuvem3">
-          <img src="img/burro.png"  class="loise">
-          <img src="img/ovelha.png"  class="ovelha">
-          <img src="img/porco.png"  class="porco">
-          <img src="img/vaca1.png" class="vaca">
+    <title>Login/Sign up Form with Flip effect</title>
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel="stylesheet" href="style.css">
 
-          <div class="convite">
-           <button onclick="abrir()">Abrir</button>
-          </div>
-         
-        
-    </div>
+  </head>
     
-    
-    <div class="corpo">
-          <img src="img/grama.png" class="grama">
-          <img src="img/arvore1.png"  class="arvore">
-          <img src="img/casa.png" class="casa">
-          <img src="img/arvore1.png"  class="arvore1">
-          <img src="img/arvore2.png" class="arvore2">        
-          <img src="img/cerca.png"  class="cercaleft">
-          <img src="img/cerca.png"  class="cercaright">
-          <img src="img/nuvem.png"  class="nuvem1">
-          <img src="img/nuvem.png"  class="nuvem2">
-          <img src="img/nuvem.png"  class="nuvem3">
-          <img src="img/cavalo&loise.png"  class="loise">
-          <img src="img/ovelha.png"  class="ovelha">
-          <img src="img/porco.png"  class="porco">
-          <img src="img/vaca1.png" class="vaca">
-          <img src="img/trator.png"  class="trator">
+  <body>
+	
 
-         
-          <div class=" informacoes">
-            <p class="nome">Maria Louise</p>
-            <p class="idade"> &#X2764; 1 aninho &#X2764;</p> 
-            <p class="texto" >a fazendia está em festa! venha comemorar comigo o meu 1º aninho</p>
-            <p class="dia">27 de Janeiro de 2023 <br> terça ás 19:00h </p>
-            <a href="https://wa.me/5598981502684?text=Oi%21%20Tudo%20bem%3F%20Estou%20passando%20para%20confirmar%20que%20vou%20sim%20ao%20anivers%C3%A1rio.%20J%C3%A1%20estou%20animado(a)%21%20Obrigado(a)%20pelo%20convite" target="_blank"><img src="img/confirmar-presença.png" alt="" class="presenca"></a>
-            <button onclick="localizacao()"><img src="img/localização.png" class="localizacao"></button>
+<div id="container">
+		<div class="login">
+			<div class="content">
+					<h1>Nessa Fazendinha encantada, a alegria é a nossa maior colheita! Venha comemorar comigo meu primeiro ano de vida!</h1>
+				
+			
+				<span class="copy">&copy; 2026</span>
+			</div>
+		</div>
+		<div class="page front">
+			<div class="content">
+			
+					<h1>Tenho um convite para vc!</h1>
+					<p></p>
+					<button type="" id="register">Proximo </button>
+			</div>
+		</div>
+		<div class="page back">
+				<div class="content">
+                    <img src="louise/img/fazendinha.png" style="width: 350px;">
+					
+					
+					
+			</div>
+		</div>
+		<div class="register">
+			<div class="content">
+					<h1>Conto com sua Presença</h1>
+				
+					
+					
+				
+                <button type="" id="login"> Proceguir</button>
+				<span class="loginwith">Click no Botão acima<span>
 
-          
-            <img src="img/flor-right.png" class="flor-right">
-            <img src="img/flor-top.png" class="flor-top">
-          </div>
-
-          
-    
-        
-    </div>
-
-    <div class="local" id="localizacao">
-        <img src="img/grama.png" class="grama">
-        <img src="img/arvore1.png"  class="arvore">
-          <img src="img/casa.png" class="casa">
-          <img src="img/arvore1.png"  class="arvore1">
-          <img src="img/arvore2.png" class="arvore2">        
-          <img src="img/cerca.png"  class="cercaleft">
-          <img src="img/cerca.png"  class="cercaright">
-          <img src="img/nuvem.png"  class="nuvem1">
-          <img src="img/nuvem.png"  class="nuvem2">
-          <img src="img/nuvem.png"  class="nuvem3">
-          <img src="img/burro.png"  class="loise">
-          <img src="img/ovelha.png"  class="ovelha">
-          <img src="img/porco.png"  class="porco">
-          <img src="img/vaca1.png" class="vaca">
-
-          <div class="localizacaoimg">
-           <h1>O local é:</h1>
-           <p>
-                Rua: Av. Deputado manoel Paiva <br>
-                nº 1957 <br>
-                Bairro: São Brás <br>
-                Cidade: Santa Helena - Ma <br>
-                ( casa da Vovó )
-           </p>
-           <p class="txt" style="font-size: 1.5em; color: red;">
-            Dia 27 de Janeiro
-           </p>
-           <p class="txt" style="color: blue;">
-            As 19h00
-           </p>
-           <p class="txt">Sua presença é muito Importante</p>
-          </div>
-         <button onclick="voltar()"> Voltar</button>
-        
-    </div>
-
-    <script>
-        const inicio = document.querySelector('.frente')
-        const corpo = document.querySelector ('.corpo')
-        const audio = document.querySelector('#audio')
-        const local = document.querySelector('#localizacao')
+					
+			</div>		
+		</div>
+</div>
 
 
-        function abrir(){
-            corpo.style.display = 'block'
-            inicio.style.display = 'none'
-            audio.play()
-            
-        }
+    <script  src="script.js"></script>
 
-        function localizacao(){
-            corpo.style.display = 'none'
-            local.style.display ='block'
-        }
-        function voltar(){
-            local.style.display = 'none'
-            corpo.style.display = 'block'
-        }
-        
-    </script>
-
-    
-</body>
+  </body>
+  
 </html>

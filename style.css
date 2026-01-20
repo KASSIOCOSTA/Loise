@@ -16,7 +16,10 @@ html {
 
 body {
   height: 100%;
-  background: #e9ebee;
+  background-image: url(louise/img/capa4.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #1d2129;
   display: flex;
   align-items: center;
@@ -67,6 +70,7 @@ span.remember {
 }
 span.remember::before {
   content: "";
+
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -153,7 +157,7 @@ button:focus {
 #container {
   width: 95%;
   max-width: 800px;
-  height: 500px;
+  height: 700px;
   position: relative;
   border-radius: 20px;
   box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.1), 0 10px 10px -10px rgba(0, 0, 0, 0.02);
@@ -207,6 +211,7 @@ button:focus {
 .register svg {
   margin: 1em;
   stroke: #999;
+  
 }
 
 .page {
@@ -227,7 +232,7 @@ button:focus {
 }
 
 .front {
-  background: linear-gradient(-45deg, #00bbff 0%, #fc4fd4 100%) no-repeat 0 0/200%;
+  background: linear-gradient(-45deg, #043703 0%, #d9fd0c 100%) no-repeat 0 0/200%;
   z-index: 3;
 }
 

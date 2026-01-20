@@ -7,6 +7,6 @@ registerButton.onclick = function(){
 	 container.className = 'active'
 }
 loginButton.onclick = function(){
-		container.className = 'close'
+		location.href = "louise/index.html"
 		
 }
